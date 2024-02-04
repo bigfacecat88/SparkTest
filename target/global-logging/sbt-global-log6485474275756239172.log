@@ -1,0 +1,49 @@
+[debug] > Exec(all {file:/C:/Users/dell/IdeaProjects/SparkTest/}root/products {file:/C:/Users/dell/IdeaProjects/SparkTest/}root/test:products, None, None)
+[debug] Evaluating tasks: Compile / products, Test / products
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 5 Scala sources to C:\Users\dell\IdeaProjects\SparkTest\target\scala-2.13\classes ...
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\SparkReadFile.scala:1:8: object spark is not a member of package org.apache
+[error] import org.apache.spark
+[error]        ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\SparkReadFile.scala:2:19: object spark is not a member of package org.apache
+[error] import org.apache.spark.sql.DataFrameReader
+[error]                   ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\SparkReadFile.scala:3:19: object spark is not a member of package org.apache
+[error] import org.apache.spark.sql.SparkSession
+[error]                   ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\SparkReadFile.scala:8:15: not found: value SparkSession
+[error]     val spark=SparkSession.builder()
+[error]               ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\SparkWriteFile.scala:1:19: object spark is not a member of package org.apache
+[error] import org.apache.spark.sql.SparkSession
+[error]                   ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\SparkWriteFile.scala:2:8: object spark is not a member of package org.apache
+[error] import org.apache.spark
+[error]        ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\SparkWriteFile.scala:7:17: not found: value SparkSession
+[error]     val spark = SparkSession.builder()
+[error]                 ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\WordCount.scala:1:19: object hadoop is not a member of package org.apache
+[error] import org.apache.hadoop.shaded.org.eclipse.jetty.websocket.common.frames.DataFrame
+[error]                   ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\WordCount.scala:2:19: object spark is not a member of package org.apache
+[error] import org.apache.spark.sql.DataFrame
+[error]                   ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\WordCount.scala:3:19: object spark is not a member of package org.apache
+[error] import org.apache.spark.sql.SparkSession
+[error]                   ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\WordCount.scala:4:19: object spark is not a member of package org.apache
+[error] import org.apache.spark.{SparkConf,SparkContext}
+[error]                   ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\WordCount.scala:19:23: not found: type SparkConf
+[error]     var context = new SparkConf().setAppName("WordCount").setMaster("local")
+[error]                       ^
+[error] C:\Users\dell\IdeaProjects\SparkTest\src\main\scala\WordCount.scala:20:18: not found: type SparkContext
+[error]     var sc = new SparkContext(context)
+[error]                  ^
+[error] 13 errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 0 s, completed 2023-10-19 15:04:05
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
